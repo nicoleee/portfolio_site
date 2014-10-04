@@ -15,6 +15,12 @@
 
 }
 
+/*-------------Colours---------------*/
+
+$orange: #f27708;
+$off-white: #efefef;
+$grey: #2e2e2e;
+
 /*---------Basic Reset---------*/
 
 * {
@@ -31,6 +37,11 @@ html, body {
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 	height: 100%;
+}
+
+body {
+	background: $off-white;
+	color: $grey;
 }
 
 /*---------Typography Settings---------*/
@@ -71,6 +82,7 @@ $h4-margin-bottom: 1 * $h4-line;
 
 .h1, .h2, .h3, .h4 {
 	font-family: "Bite Bullet";
+	font-weight: normal;
 }
 
 .h1 {
@@ -100,14 +112,8 @@ $h4-margin-bottom: 1 * $h4-line;
 p {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
-	margin: $h1-margin-top 0 $h1-margin-bottom 0;
+	margin: 1.5rem 0 1.5rem 0;
 }
-
-/*-------------Colours---------------*/
-
-$orange: #f27708;
-$off-white: #efefef;
-$grey: #2e2e2e;
 
 /*-------------Size / Primitives---------------*/
 
@@ -115,14 +121,19 @@ $grey: #2e2e2e;
 	@include clearfix();
 }
 
+.section--full-height {
+	height: 100%;
+}
+
 .container {
 	width: 100%;
 	max-width: 1020px;
 	margin: 0 auto 0 auto;
 	@include clearfix();
+	padding: 0 20px;
 }
 
-.container--padded {
+.section--padded {
 	padding: 30px 0;
 }
 
@@ -172,10 +183,23 @@ img {
 	text-align: center;
 }
 
+//this classes pushes stuff down the navigation height
+.push-down {
+	margin-top: 80px;
+}
+
 /*-------------Text Modiers---------------*/
 
 .text--white {
 	color: $off-white;
+}
+
+.constrained {
+	p {
+		max-width: $measure;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /*-------------background Modifers---------------*/
@@ -184,11 +208,65 @@ img {
 	background: $orange;
 }
 
+.background--off-white {
+	background: $off-white;
+}
+
 /*===========================================
 				MAIN THEME
 =============================================*/
 
 /*-------------Navs / Menu Stuff ---------------*/
 
+.nav {
+	position:fixed;
+	top:0;
+	left:0;
+	@include clearfix();
+	ul {
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
 
+		li {
+			list-style:none;
+			float: left;
+			width: columns(2.4);
 
+			a {
+				display:block;
+				text-align:center;
+				font-family: "Bite Bullet", sans-serif;
+				color: $grey;
+				padding: 10px 15px;
+				text-decoration: none;
+				font-size: 40px;
+
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+	}
+}
+
+/*-------------Footer Styles---------------*/
+
+.banner {
+	background: url('../media/banner.jpg') repeat-x;
+	height:14px;
+}
+
+.social-links {
+	padding: 15px 0 15px 0;
+	margin: 0 0 0 0;
+	text-align:center;
+	li {
+		display: inline-block;
+		list-style:none;
+	}
+}
+
+.copyright {
+	margin-top: 0;
+	color: #999;
+}
