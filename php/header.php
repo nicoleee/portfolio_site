@@ -9,11 +9,11 @@
 		<div class="container">
 			<nav class="nav full background--off-white">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="About.html">About</a></li>
-					<li><a href="Portfolio.html">Portfolio</a></li>
-					<li><a href="Curriculum Vitae.pdf">CV</a></li>
-					<li><a href="Contact.php">Contact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="about.php">About</a></li>
+					<li><a href="portfolio.php">Portfolio</a></li>
+					<li><a href="cv.pdf">CV</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
