@@ -249,6 +249,19 @@ img {
 	}
 }
 
+/*-------------Gallery Grid Styles ---------------*/
+
+.gallery {
+	@include clearfix();
+	padding: 80px 0;
+}
+
+.gallery__item {
+	padding: 20px 10px 20px 10px;
+	overflow:hidden;
+	height: 180px;
+}
+
 /*-------------Footer Styles---------------*/
 
 .banner {
