@@ -12,7 +12,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="about.php">About</a></li>
 					<li><a href="portfolio.php">Portfolio</a></li>
-					<li><a href="cv.pdf">CV</a></li>
+					<li><a href="media/cv.pdf" target="_blank">CV</a></li>
 					<li><a href="contact.php">Contact</a></li>
 				</ul>
 			</nav>
