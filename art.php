@@ -15,7 +15,7 @@ require 'php/header.php';
 <script src="js/lightbox.min.js"></script>
 <script>
 
-var url = window.location.origin + window.location.pathname + 'artwork/';
+var url = window.location.origin + '/portfolio_site/pictures/artwork/';
 var gallery = document.getElementsByClassName('gallery')[0];
 var loading = document.getElementsByClassName('loading-icon')[0];
 
