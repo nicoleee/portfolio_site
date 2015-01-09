@@ -30,6 +30,7 @@ require 'php/header.php';
 			var img = document.createElement('img');
 			img.setAttribute('src', url + photos[i]);
 			img.setAttribute('data-jslghtbx', '');
+			img.setAttribute('data-jslghtbx-group', 'group1');
 			img.addEventListener('load', function(){
 				imgsLoaded++;
 				if (imgsLoaded == l) {
