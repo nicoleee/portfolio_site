@@ -180,7 +180,8 @@ img {
 .gallery__item {
   padding: 20px 10px 20px 10px;
   overflow: hidden;
-  height: 180px; }
+  height: 180px;
+  cursor: pointer; }
 
 /*-------------Footer Styles---------------*/
 .banner {

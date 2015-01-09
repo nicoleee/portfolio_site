@@ -3,6 +3,7 @@
 	<head>
 		<title>Nicole Cook | Digital Designer</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/lightbox.css">
 	</head>
 	<body>
 	<div class="section full">

@@ -1,4 +1,4 @@
-<?php 
+<?php
 require 'php/header.php';
 ?>
 <div class="section section--padded push-down">
@@ -11,32 +11,32 @@ require 'php/header.php';
 </div>
 
 <script src="js/ajax.js"></script>
+<script src="js/lightbox.min.js"></script>
 <script>
-	
+
 	var url = "http://localhost:8888/portfolio_site/pictures/photography/";
 	var gallery = document.getElementsByClassName('gallery')[0];
 
 	Ajax.get(url, function(data){
 		var photos = JSON.parse(data);
-		
+
 		for ( var i = 0, l = photos.length; i <= l -1; i++) {
 			var imgWrap = document.createElement('div');
 			imgWrap.setAttribute('class', 'gallery__item media-holder third left');
 
 			var img = document.createElement('img');
 			img.setAttribute('src', url + photos[i]);
+			img.setAttribute('data-jslghtbx', '');
 
 			imgWrap.appendChild(img);
 
 			gallery.appendChild(imgWrap);
 		}
 
-
+		var lightbox = new Lightbox();
+		lightbox.load();
 	});
-
-	
-
 </script>
-<?php 
+<?php
 require 'php/footer.php';
  ?>
