@@ -14,7 +14,7 @@
 					<a href="https://twitter.com/nicole_elocin_"><img src="media/twitter.png"></a>
 				</li>
 		</ul>
-		<p class="align-center copyright"> &copy; Copyright Nicole Cook 2014 | All Rights Reserved</p>
+		<p class="align-center copyright"> &copy; Copyright Nicole Cook <?php echo date('Y') ?> | All Rights Reserved</p>
 	</footer>
 	</body>
 </html>

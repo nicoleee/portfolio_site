@@ -1,7 +1,7 @@
-<?php 
+<?php
 require 'php/header.php';
 ?>
-<div class="section section--padded push-down">
+<div class="section section--padded-super push-down">
 	<div class="container">
 		<div class="third media-holder left">
 			<a href="photography.php"><img src="media/photog.jpg"></a>
@@ -16,6 +16,6 @@ require 'php/header.php';
 </div>
 
 
-<?php 
+<?php
 require 'php/footer.php';
  ?>
