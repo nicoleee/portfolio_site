@@ -254,6 +254,7 @@ img {
 .gallery {
 	@include clearfix();
 	padding: 80px 0;
+  position: relative;
 }
 
 .gallery__item {
@@ -263,6 +264,16 @@ img {
   cursor: pointer;
 }
 
+.loading-icon {
+  position: absolute;
+  top:0;
+  left: 50%;
+  margin-left: -19px;
+
+  &.hidden {
+    display: none;
+  }
+}
 /*-------------Footer Styles---------------*/
 
 .banner {

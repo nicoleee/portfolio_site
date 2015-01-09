@@ -5,6 +5,7 @@ require 'php/header.php';
 	<div class="container">
 		<h1 class="h1 align-center">Photography</h1>
 		<div class="gallery">
+			<img class="loading-icon" src="media/oval.svg" alt="loading svg"/>
 			<!-- Javascript Injects each grid item after scanning a directory -->
 		</div>
 	</div>
@@ -16,9 +17,11 @@ require 'php/header.php';
 
 	var url = "http://localhost:8888/portfolio_site/pictures/photography/";
 	var gallery = document.getElementsByClassName('gallery')[0];
+	var loading = document.getElementsByClassName('loading-icon')[0];
 
 	Ajax.get(url, function(data){
 		var photos = JSON.parse(data);
+		var imgsLoaded = 0;
 
 		for ( var i = 0, l = photos.length; i <= l -1; i++) {
 			var imgWrap = document.createElement('div');
@@ -27,12 +30,17 @@ require 'php/header.php';
 			var img = document.createElement('img');
 			img.setAttribute('src', url + photos[i]);
 			img.setAttribute('data-jslghtbx', '');
+			img.addEventListener('load', function(){
+				imgsLoaded++;
+				if (imgsLoaded == l) {
+					loading.setAttribute('class','loading-icon hidden');
+				}
+			});
 
 			imgWrap.appendChild(img);
 
 			gallery.appendChild(imgWrap);
 		}
-
 		var lightbox = new Lightbox();
 		lightbox.load();
 	});
