@@ -4,6 +4,8 @@
 		<title>Nicole Cook | Digital Designer</title>
 		<link rel="stylesheet" href="css/lightbox.css">
 		<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="http://nicolecookdesigns.co.uk/favicon.png"/>
 	</head>
 	<body>
 	<div class="section full">
