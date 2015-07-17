@@ -11,11 +11,9 @@ require 'php/header.php';
 </div>
 <div class="section section--padded full background--orange">
 	<div class="container constrained">
-		<p class="text--white">I'm a digital designer currently studying (BA Hons) Digital media design at Bournemouth University.
+		<p class="text--white">I work as a Graphic Designer for Fun Fancy Dress in Poole. I studied Digital Media Design at Bournemouth University and will be graduating in November.
 			My main interest is in digital graphics and web design.
-			I am very familiar with the Adobe suite and have a basic knowledge of HTML and CSS. I also enjoy illustrating
-			and taking and editing photography in my spare time. I originally come from Southampton but live in Bournemouth, Winton
-			in term time.</p>
+			I am very familiar with the Adobe suite and have a basic knowledge of HTML and CSS. I also enjoy taking and editing photography in my spare time. I live in Charminster, Bournemouth.</p>
 	</div>
 </div>
 <div class="section section--padded section--full-height push-down">
